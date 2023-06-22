@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap');
+
+body {
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1100px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 44px;
+    height: 55px;
+    background-image: url(../css/img/apple.svg);
+    background-size: cover;
+}
+
+header {
+    align-items: center;
+    list-style: none;
+    display: flex;
+}
+
+header li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header li a:after {
+    margin-top: 6px;
+    max-width: 0%;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    content: "";
+    transition: 0.2s;
+}
+
+header nav ul li a:after:hover {
+    max-width: 100%;
+}
+
+.text h1 {
+    font-size: 53px;
+    font-weight: 900;
+    animation: onShowText 1s ease-out;
+}
+
+.text p {
+    font-weight: 300;
+    font-size: 64px;
+    margin-bottom: 100px;
+    animation: onShowText 1s ease-out;
+}
+
+a.btn {
+    border: 5px solid black;
+    font-weight: 900;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+    padding: 24px 111px;
+}
+
+.text {
+    margin-top: 240px;
+    position: relative;
+    z-index: 1;
+}
+
+.spline {
+    position: absolute;
+    left: 350px;
+    top: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.spline spline-viewer {
+    height: 700px;
+}
+
+@keyframes onShowText {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transition: translateX(0%);
+    }
+}
+
+.price {
+    margin-top: 300px;
+}
+
+.price__container {
+    width: 1100px;
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.price__title {
+    font-size: 36px;
+}
+
+.price__text {
+    color: #ffffff8f;
+}
